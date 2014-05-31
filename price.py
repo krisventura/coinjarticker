@@ -78,6 +78,7 @@ class CheckPrices:
 	def main(self):
 		self.fetch_prices()
 		gtk.timeout_add(PING_FREQUENCY * 1000, self.fetch_prices)
+		print "bid"
 		gtk.main()
 	def quit(self, widget):
 		sys.exit(0)
